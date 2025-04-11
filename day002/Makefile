@@ -1,6 +1,6 @@
 # TODO: Replace SOURCE with your actual CUDA source file
 NVCC = nvcc
-NVCCFLAGS = -std=c++11 -O3
+NVCCFLAGS = -std=c++11 -O3 -arch=sm_70 -diag-suppress=1650
 TARGET = colorToGrayscaleConversion # TODO: Replace with your target executable name
 SOURCE = colorToGrayscaleConversion.cu # TODO: Replace with your source file
 

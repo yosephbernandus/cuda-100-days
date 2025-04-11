@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#1a1a1a" font-weight="bold">CUDA 2D Thread to Pixel Mapping</text>
+  <text x="400" y="55" font-family="Arial" font-size="16" text-anchor="middle" fill="#1a1a1a">62×76 Image using 16×16 Thread Blocks</text>
+  
+  <!-- Grid Container - Image Boundaries -->
+  <rect x="50" y="80" width="380" height="310" fill="none" stroke="#333" stroke-width="2" rx="2" />
+  <text x="240" y="75" font-family="Arial" font-size="14" text-anchor="middle" fill="#333" font-weight="bold">62×76 Image (Pixels)</text>
+  
+  <!-- Block grid lines - vertical -->
+  <line x1="50" y1="80" x2="50" y2="390" stroke="#999" stroke-width="1" />
+  <line x1="114" y1="80" x2="114" y2="390" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="178" y1="80" x2="178" y2="390" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="242" y1="80" x2="242" y2="390" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="306" y1="80" x2="306" y2="390" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="370" y1="80" x2="370" y2="390" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="430" y1="80" x2="430" y2="390" stroke="#999" stroke-width="1" />
+  
+  <!-- Block grid lines - horizontal -->
+  <line x1="50" y1="80" x2="430" y2="80" stroke="#999" stroke-width="1" />
+  <line x1="50" y1="144" x2="430" y2="144" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="50" y1="208" x2="430" y2="208" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="50" y1="272" x2="430" y2="272" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="50" y1="336" x2="430" y2="336" stroke="#666" stroke-width="1.5" stroke-dasharray="4 2" />
+  <line x1="50" y1="390" x2="430" y2="390" stroke="#999" stroke-width="1" />
+  
+  <!-- Highlight a specific block (1,1) -->
+  <rect x="114" y="144" width="64" height="64" fill="#bbdefb" stroke="#1976d2" stroke-width="2" rx="2" fill-opacity="0.6" />
+  <text x="146" y="138" font-family="Arial" font-size="12" text-anchor="middle" fill="#0d47a1" font-weight="bold">Block (1,1)</text>
+  
+  <!-- Highlight a specific thread (5,7) in block (1,1) -->
+  <rect x="134" y="179" width="4" height="4" fill="#d32f2f" stroke="#b71c1c" stroke-width="1" />
+  <circle cx="136" cy="181" r="10" fill="none" stroke="#d32f2f" stroke-width="2" />
+  
+  <!-- Row & Column indicators for blocks -->
+  <text x="82" y="128" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Block</text>
+  <text x="82" y="144" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(0,0)</text>
+  
+  <text x="146" y="128" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Block</text>
+  <text x="146" y="144" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(1,0)</text>
+  
+  <text x="210" y="128" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Block</text>
+  <text x="210" y="144" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(2,0)</text>
+  
+  <text x="82" y="192" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Block</text>
+  <text x="82" y="208" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(0,1)</text>
+  
+  <text x="210" y="192" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Block</text>
+  <text x="210" y="208" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">(2,1)</text>
+  
+  <!-- Zoom in view of Block (1,1) -->
+  <rect x="500" y="80" width="250" height="250" fill="#e3f2fd" stroke="#1976d2" stroke-width="3" rx="5" />
+  <text x="625" y="70" font-family="Arial" font-size="16" text-anchor="middle" fill="#0d47a1" font-weight="bold">Zoom: Block (1,1)</text>
+  
+  <!-- Grid inside the block -->
+  <g transform="translate(510, 90)">
+    <!-- Grid lines vertical -->
+    <line x1="0" y1="0" x2="0" y2="230" stroke="#90caf9" stroke-width="1" />
+    <line x1="15" y1="0" x2="15" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="30" y1="0" x2="30" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="45" y1="0" x2="45" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="60" y1="0" x2="60" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="75" y1="0" x2="75" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="90" y1="0" x2="90" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="105" y1="0" x2="105" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="120" y1="0" x2="120" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="135" y1="0" x2="135" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="150" y1="0" x2="150" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="165" y1="0" x2="165" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="180" y1="0" x2="180" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="195" y1="0" x2="195" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="210" y1="0" x2="210" y2="230" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="225" y1="0" x2="225" y2="230" stroke="#90caf9" stroke-width="1" />
+    
+    <!-- Grid lines horizontal -->
+    <line x1="0" y1="0" x2="230" y2="0" stroke="#90caf9" stroke-width="1" />
+    <line x1="0" y1="15" x2="230" y2="15" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="30" x2="230" y2="30" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="45" x2="230" y2="45" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="60" x2="230" y2="60" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="75" x2="230" y2="75" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="90" x2="230" y2="90" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="105" x2="230" y2="105" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="120" x2="230" y2="120" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="135" x2="230" y2="135" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="150" x2="230" y2="150" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="165" x2="230" y2="165" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="180" x2="230" y2="180" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="195" x2="230" y2="195" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="210" x2="230" y2="210" stroke="#90caf9" stroke-width="0.5" />
+    <line x1="0" y1="225" x2="230" y2="225" stroke="#90caf9" stroke-width="1" />
+    
+    <!-- Highlight thread (5,7) -->
+    <rect x="75" y="105" width="15" height="15" fill="#ef5350" stroke="#d32f2f" stroke-width="2" />
+    <text x="83" y="118" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">T</text>
+  </g>
+  
+  <!-- Thread index annotations -->
+  <text x="575" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#d32f2f" font-weight="bold">Thread (5,7)</text>
+  <text x="575" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#d32f2f">threadIdx.x = 5</text>
+  <text x="575" y="220" font-family="Arial" font-size="12" text-anchor="middle" fill="#d32f2f">threadIdx.y = 7</text>
+  
+  <!-- Block information -->
+  <text x="625" y="270" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1" font-weight="bold">Block (1,1) Info:</text>
+  <text x="625" y="290" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">blockIdx.x = 1</text>
+  <text x="625" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">blockIdx.y = 1</text>
+  <text x="625" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">blockDim.x = 16</text>
+  <text x="625" y="350" font-family="Arial" font-size="14" text-anchor="middle" fill="#0d47a1">blockDim.y = 16</text>
+  
+  <!-- Calculation of pixel coordinates -->
+  <rect x="50" y="420" width="700" height="160" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="8" />
+  <text x="400" y="445" font-family="Arial" font-size="16" text-anchor="middle" fill="#1b5e20" font-weight="bold">Calculating Pixel Coordinates for Thread (5,7) in Block (1,1)</text>
+  
+  <!-- Vertical coordinate calculation -->
+  <text x="400" y="475" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">Vertical (Row) coordinate = blockIdx.y * blockDim.y + threadIdx.y</text>
+  <text x="400" y="495" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">= 1 * 16 + 7 = 23</text>
+  
+  <!-- Horizontal coordinate calculation -->
+  <text x="400" y="525" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">Horizontal (Column) coordinate = blockIdx.x * blockDim.x + threadIdx.x</text>
+  <text x="400" y="545" font-family="Arial" font-size="14" text-anchor="middle" fill="#1b5e20">= 1 * 16 + 5 = 21</text>
+  
+  <!-- Final pixel coordinate -->
+  <text x="400" y="575" font-family="Arial" font-size="16" text-anchor="middle" fill="#1b5e20" font-weight="bold">This thread processes the pixel at coordinates (21,23) in the image</text>
+  
+  <!-- Connector lines -->
+  <line x1="136" y1="181" x2="500" y2="155" stroke="#d32f2f" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrow)" />
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
+    </marker>
+  </defs>
+</svg>

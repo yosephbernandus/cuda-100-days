@@ -6,8 +6,6 @@ Tools to generate directory:
 ## Resource That I Used
 - Book Programming Massively Prallel Processors
 
-## Day 1
-
 # Day 1 - CUDA Learning
 
 File: [vec-add.cu](https://github.com/yosephbernandus/cuda-100-days/blob/main/day001/vec-add.cu)
@@ -67,4 +65,6 @@ if (error!=cudaSuccess)
 - GPU Have dram also cache (L1, L2, L3) like on CPU
 - Also the PC (Program counter) and SP (Stack Pointer) and the ALU (Arithmetic Logic Unit)
 
+
+# Day 2
 

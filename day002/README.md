@@ -1,5 +1,7 @@
 # Day 2 - CUDA Learning
 
+File: [colorToGrayscaleConversion.cu](https://github.com/yosephbernandus/cuda-100-days/blob/main/day002/colorToGrayscaleConversion.cu)
+
 ## Book Coverage
 Chapter 3 - Multidimensional Grids and Data (Mapping threads to multidimensional data)
 

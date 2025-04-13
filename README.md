@@ -66,7 +66,8 @@ if (error!=cudaSuccess)
 - Also the PC (Program counter) and SP (Stack Pointer) and the ALU (Arithmetic Logic Unit)
 
 
-# Day 2
+# Day 2 - CUDA Learning
+File: [colorToGrayscaleConversion.cu](https://github.com/yosephbernandus/cuda-100-days/blob/main/day002/colorToGrayscaleConversion.cu)
 
 ## Book Coverage
 Chapter 3 - Multidimensional Grids and Data

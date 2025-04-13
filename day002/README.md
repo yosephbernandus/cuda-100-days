@@ -1,7 +1,7 @@
 # Day 2 - CUDA Learning
 
 ## Book Coverage
-Chapter 3 - Multidimensional Grids and Data
+Chapter 3 - Multidimensional Grids and Data (Mapping threads to multidimensional data)
 
 ## Concepts Learned
 - CUDA thread hierarchy (grids, blocks, threads)
@@ -9,6 +9,7 @@ Chapter 3 - Multidimensional Grids and Data
 - Thread-to-data mapping formulas
 - Memory linearization techniques
 - Row-major and column-major memory layouts
+- Thread-to-output-data
 
 ## Code Implemented
 - Basic image processing example for converting color to grayscale

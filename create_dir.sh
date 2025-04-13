@@ -66,7 +66,7 @@ SOURCE = source.cu # TODO: Replace with your source file
 all: $(TARGET)
 
 $(TARGET): $(SOURCE)
-	$(NVCC) $(NVCCFLAGS) -o $@ $
+	$(NVCC) $(NVCCFLAGS) -o $@ $<
 
 clean:
 	rm -f $(TARGET)

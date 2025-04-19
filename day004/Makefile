@@ -1,8 +1,8 @@
 # TODO: Replace SOURCE with your actual CUDA source file
 NVCC = nvcc
 NVCCFLAGS = -std=c++11 -O3
-TARGET = target # TODO: Replace with your target executable name
-SOURCE = source.cu # TODO: Replace with your source file
+TARGET = matrixMultiply # TODO: Replace with your target executable name
+SOURCE = matrixMultiply.cu # TODO: Replace with your source file
 
 all: $(TARGET)
 

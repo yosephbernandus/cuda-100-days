@@ -7,7 +7,7 @@ SOURCE = vec-add.cu
 all: $(TARGET)
 
 $(TARGET): $(SOURCE)
-	$(NVCC) $(NVCCFLAGS) -o $@ $
+	$(NVCC) $(NVCCFLAGS) -o $@ $<
 
 clean:
 	rm -f $(TARGET)

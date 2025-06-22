@@ -3,6 +3,18 @@
 Tools to generate directory:
 - ./create_dir.sh --days 5
 
+## CUDA Tools for debug
+Find architecture:
+```
+nvidia-smi --query-gpu=compute_cap --format=csv
+```
+
+Docs:
+https://docs.nvidia.com/cuda/cuda-compiler-driver-nvcc/index.html#gpu-compilation
+https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#compute-capabilities
+https://developer.nvidia.com/cuda-gpus
+
+
 ## Resource That I Used
 - Book Programming Massively Prallel Processors
 
@@ -200,7 +212,7 @@ File: [matrixMultiply.cu](https://github.com/yosephbernandus/cuda-100-days/blob/
 ## Book Coverage
 Chapter 3 - Multidimensional Grids and Data (Image blur: a more complex kernel)
 
-## Diagram Explain
+## Diagram Explai
 This diagram shows a 4×4 result matrix P with BLOCK_WIDTH = 2. The matrix is divided into 4 tiles (blocks):
 
 - Block(0,0): Calculates elements P₀,₀, P₀,₁, P₁,₀, P₁,₁
